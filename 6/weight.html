@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weight converter</title>
+	<script src="we.js"></script>
+    <link type="text/css" rel="stylesheet" href="weg.css">
+</head>
+<body class="back">
+<a href="..\index.html" style="text-decoration:none; color:black;">MAIN</a>
+<div class="main"><br>
+<center><h1 style="color:#073903;">Weight Converter</h1>
+    Enter Weight : <input type="text" placeholder="Enter weight" id="inWeight">
+        <span>
+            
+          <select  id="wt">  <option id="Grams" selected>Grams</option>
+                <option id="Kilograms">KiloGrams</option>
+                <option id="Pounds">Pounds</option>
+                <option id="Ounces">Ounces</option>
+            </select>
+        </span>
+		<br>
+		<br>
+		<table> 
+			<tr>
+			<td><input type="button" id="digit1" value="1" onClick="buttonclicked(digit1.value)" style="font-size:20px"/>
+						<input type="button"  id="digit2" value="2" onClick="buttonclicked(digit2.value)" style="font-size:20px"/>
+						<input type="button"  id="digit3" value="3" onClick="buttonclicked(digit3.value)" style="font-size:20px"/></td>
+					</tr>
+					<tr>
+						<td><input type="button" id="digit4" value="4" onClick="buttonclicked(digit4.value)" style="font-size:20px"/>
+						<input type="button" id="digit5" value="5" onClick="buttonclicked(digit5.value)" style="font-size:20px"/>
+						<input type="button" id="digit6" value="6" onClick="buttonclicked(digit6.value)" style="font-size:20px"/></td>
+					</tr>
+					<tr>
+						<td><input type="button" id="digit7" value="7" onClick="buttonclicked(digit7.value)" style="font-size:20px"/>
+						<input type="button"  id="digit8" value="8" onClick="buttonclicked(digit8.value)" style="font-size:20px"/>
+						<input type="button"  id="digit9" value="9" onClick="buttonclicked(digit9.value)" style="font-size:20px"/></td>
+					</tr>
+				<tr> 
+						<td><input type="button"  id="digit0" value="0" onClick="buttonclicked(digit0.value)" style="font-size:20px"/>
+	           <input type="submit" value="Submit" onclick="func()" id="submit-button" style="border:none; background-color:#749F82; color:white; font-size:20px;"></td>			   
+					</tr>
+					</table>
+    <div class="ulla">
+        <h2 style="color:#073903;"><b>Result</b></h2>
+   <table align="center" cellspacing="2" cellpadding="4" ><tr>
+       <td >In Grams</td><td>:</td><td id="Rgrams">43</td>
+   </tr>
+   <tr>
+    <td>In KiloGrams</td><td>:</td><td id="Rkilograms">18</td>
+</tr>
+<tr>
+    <td>In Pounds</td><td>:</td><td id="Rpounds">12</td>
+</tr>
+<tr>
+    <td >In Ounces</td><td>:</td><td id="Rounces">90</td>
+</tr>
+</table>
+</div>
+    <br><input type="reset" onclick="resetValue()" value="Reset" style="border:none; background-color:#749F82; color:white; font-size:20px;">
+	<br>
+	</center>
+	<br>
+</div>
+    
+</body>
+</html>

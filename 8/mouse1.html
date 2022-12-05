@@ -1,0 +1,114 @@
+<!DOCTYPE hmtl>
+  <html>
+    <head>
+            <style>
+                img
+                {
+                    height: 200px;
+                }
+                body 
+                {
+                    background-image:url("bround.jfif");
+					background-repeat:no-repeat;
+                    background-size:cover;
+                }
+                .page{
+				  background-color:red;
+				}
+            </style>
+            <script>
+            var i=0;
+            var j=0;
+            var d=0;
+            var h=0;
+            var s=0;
+            function virat()
+            {
+                if(i==0)
+                {
+                    document.getElementById("1").src = "vr2.jpg";
+                    i=1;
+                }
+                else
+                {
+                    document.getElementById("1").src = "vr1.jpg";
+                    i=0;
+                }
+            }
+            function alien()
+            {
+                
+                if(j==0)
+                {
+                    document.getElementById("2").src = "abd.gif";
+                    j=1;
+                }
+                else
+                {
+                    document.getElementById("2").src = "abd1.AVIF";
+                    j=0;
+                }
+            }
+                function partner()
+                {
+                    if(h==0)
+                    {
+                    document.getElementById("4").src="prt1.jpg";
+                    h=1;
+                    }
+                    else
+                    {
+                        document.getElementById("4").src="prt2.jpg";
+                        h=0;
+                    }
+                }
+                function rcb()
+                {
+                    if(s==0)
+                    {
+                    document.getElementById("3").src="rcb2.jpg";
+                    s=1;
+                    }
+                    else
+                    {
+                        document.getElementById("3").src="rcb1.jpg";
+                        s=0;
+                    }
+                }
+        </script>
+        </head>
+    <body>
+	    <a href="..\index.html" style="text-decoration:none; color:red; float:left;">MAIN</a>
+        <center><h1 style="color:red;">Royal Challengers Bangalore</h1>
+       <div class="page"><a href="mouse2.html" style="text-decoration:none; color:white;">Mouse Regular Expression</a></div><br><br>	
+        <table style="width: 1000px; padding-left:170px; color:white;">
+        <tr>
+            <td><h3>Left Click</h3></td>
+            <td><h3>Come Near To See Batting</h3></td>
+        </tr>
+        <tr>
+        <td><img src="vr1.jpg"  onclick="virat()" id="1"></td>
+        <td><img src="abd1.AVIF" onmouseenter="alien()" onmouseleave="alien()" id="2"></td>
+        </tr>
+		<tr>
+		<td><br><br></td>
+		</tr>
+        <tr>
+            <td><h3>Double Click</h3></td>
+            <td><h3>Right Click</h3></td>
+        </tr>
+        <tr>
+        <td><img src="rcb1.jpg" height="300px"  ondblclick="rcb()" id="3"></td>
+        <td><img src="prt2.jpg" height="300px" oncontextmenu="partner()" id="4"></td>
+        </tr>
+        <tr></tr>
+    </table></center>
+    <center><h3 style="color:white;">Move Mouse</h3>
+	<video onmousedown="this.play()" onmouseup="this.pause();this.currentTime=0;" loop muted height="400px"
+                width="600px">
+                <source src="abd.mp4" type="video/mp4">
+                </source>
+            </video></center>
+      </div>
+      </body>
+</html>

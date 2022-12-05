@@ -1,0 +1,41 @@
+<!DOCTYPE hmtl>
+  <html>
+    <head>
+            <style>
+                body 
+                {
+                    background-image:url("bround.jfif");
+					background-repeat:no-repeat;
+                    background-size:cover;
+                }
+                .page{
+				  background-color:red;
+				}
+            </style>
+      <script>
+          function find() {
+              let text = "Virat Kohli is the Best Bat's man in the world";
+              let n = text.search(/Best/i);
+              document.getElementById("demo1").innerHTML = "Best found at : " + n;
+          }
+
+          function rplace() {
+              let text = document.getElementById("demo2").innerHTML;
+              document.getElementById("demo2").innerHTML = text.replace(/by/i, "Virat Kholi");
+          }
+      </script>
+	</head>
+	<body>
+	   <center>
+	     <div class="page"><a href="mouse1.html" style="text-decoration:none; color:white;">Mouse Events</a></div><br><br>
+         <div class="container block">
+            <h2>Record: </h2>
+            <h3>Virat Kohli is the Best Bat's man in the world</h3>
+            <p>To find position of best <button onclick="find()">Click Me </button>
+			<p id="demo1"></p>
+            <h3 id="demo2">Self-belief and hard works always leads to success - by </h3>
+            <p>To replace by with Virat Kohli <button onclick="rplace()">Click Me</button> </p>
+         </div>
+      </center>
+	</body>
+</html>

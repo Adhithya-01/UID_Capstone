@@ -1,0 +1,22 @@
+.back{
+	background-color:#8EC3B0;
+	
+}
+.main{
+	background-color:white;
+	margin-left:350px;
+	margin-top:150px;
+	margin-right:350px;
+	border-radius:10px;
+	box-shadow:2px 4px 6px 2px;
+}
+.ulla{
+	background-color:#BCEAD5;
+	margin-left:300px;
+	margin-right:300px;
+	border-radius:10px;
+	box-shadow:2px 4px 6px 2px;
+}
+*{
+   font-family:times new roman;
+}
