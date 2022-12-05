@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+  <head>
+    <title>FORMS</title>
+  </head>
+  <body bgcolor=#B8B8B8>
+    <form align=center action="text.php" method="post">
+	  <br><br><br>
+	  <h2>Registration Form</h2>
+	  Student Name:<input type="text" name="student name"/><br><br>
+	  Moblie Number:<input type="text" pattern=[0-9]{10} name="moblie number" required /><br><br>
+	  DOB:<input type="date" name="dob" /><br><br>
+	  Email:<input type="text" name="email" required /><br><br>
+	  <label for="user_pass">Password:</label>
+	  <input type="password" name="Password" minlength="8" id="user_pass"/><br><br>
+	  DEPARTMENT:<input type="radio" name="course" id="cse"/>
+	  <label for="cse">CSE</label>
+	  <input type="radio" name="course" id="cys"/>
+	  <label for="cys">CYS</label>
+	  <input type="radio" name="course" id="ai"/>
+	  <label for="ai">AI</label><br><br>
+	   EVENT:<input type="checkbox" name="event" id="1">
+	  <label for="1">HACKATON</label>
+	  <input type="checkbox" name="event" id="2"/>
+	  <label for="2">CODEING</label><br><br>
+	  <label for="up">Upload Your Id proof:</label><input type="file" name="upload" id="up"/><br><br>
+	  <label for="feed">Team Member detaisl:</label><textarea rows="2" cols="20" name="feedback" id="feed" placeholder="Max 3 person per team"></textarea><br><br>
+	  COLLEGE:<select name="State">
+	    <option value="none" selected disabled hidden>Select your college</option> 
+	    <option value="AVV">AVV</option>
+		<option value="SRM">SRM</option>
+	    <option value="VIT">VIT</option>
+		<option value="IIT">IIT</option>
+		<option value="MIT">MIT</option>
+	  </select><br><br>
+	   <input type="reset" name="reset" value="Reset"/>
+	</form>
+      <center><button><a href="home1.html" align="right">Login</a><button></center>
+</html>
